@@ -4,16 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <style type="text/css">
-	* {
+	body{
 		margin: 0;
 		padding: 0;
 	}
-	
-	#top {
+	#top{
 		background-color: black;
 		color: fuchsia;
 		left: 0;
@@ -21,36 +20,29 @@
 		height: 15vh;
 		float: left;
 	}
-	
-	#main {
+	#main{
 		background-color: gray;
 		color: fuchsia;
-		left: 0;
 		width: 100vw;
-		height: 65vh;
+		height: 70vh;
 		float: left;
 	}
-	
-	#left {
+	#left{
 		background-color: yellow;
-		color: blue;
-		left: 0;
-		width: 50vw;
-		height: 65vh;
-		float: left;
+		color:  blue;
+		width:  50vw;
+		height: 70vh;
+		float:  left;
 		overflow: auto;
 	}
-	
-	#right {
+	#right{
 		background-color: green;
-		color: fuchsia;
-		left: 0;
-		width: 50vw;
-		height: 65vh;
-		float: left;
+		color: black;
+		width:  50vw;
+		height: 70vh;
+		float:  left;
 	}
-	
-	#bottom {
+	#foot{
 		background-color: red;
 		color: white;
 		left: 0;
@@ -62,22 +54,31 @@
 
 </head>
 <body>
-<div id="top">Conteúdo do topo</div>
-<div id="main">
-	<div id="left">Conteúdo da esquerda</div>
-	<hr>
-	<div id="right">Conteúdo da direita</div>
-</div>
-<div id="bottom">Conteúdo de base</div>
+<div id="top">Conteúdo de Topo</div>
+<div id="main">	
+	<div id="left">
+		Conteúdo da Esquerda
+		<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+		<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+		<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+		<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+		<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+	</div>
+	<div id="right">
+		Conteúdo da Direita
 	
-<script type="text/javascript">
-	$(document).ready(function() {
-		$("#top").load("topo.jsp");
-		$("#left").load("left.jsp");
-		$("#right").load("right.jsp");
-		$("#bottom").load("bottom.jsp");
-	});
-</script>	
+	</div>
+</div>
+<div id="foot">Conteúdo da Base</div>
 
+<script type="text/javascript">
+	$(document).ready( function() {
+		$("#top").load("topo.jsp");
+		$("#left").load("esquerda.jsp");
+		$("#right").load("direita.jsp");
+		$("#foot").load("foot.jsp");
+	});
+
+</script>
 </body>
 </html>
